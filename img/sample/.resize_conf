@@ -1,0 +1,31 @@
+[crop]
+; vertical position of cropped segment
+; for photos of people use 0 (to keep heads in photo)
+; 0-100
+position=0
+
+[watermark]
+; path to watermark relative to resize.php
+src=../img/logo.png
+
+; position is a: (combination of left, center, right, top, bottom) or (tiled)
+position=right,bottom
+
+; from image border
+margin=10
+
+; watermark 0-100
+opacity=50
+
+[output]
+; image can be converted to png, gif, jpg
+extensions=png,gif,jpg
+
+; list of allowed configurations
+sizes=100x100,200x,px200,400x300
+
+; JPEG quality, 0-100
+quality=95
+
+; PNG compression
+compression=5

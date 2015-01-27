@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)$ $1 [L]
+RewriteRule ^(img\/.*\/resize\/).*(\.(jpe{0,1}g|gif|png|JPE{0,1}G|GIF|PNG)){1,2}$ script/resize.php [L]
